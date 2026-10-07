@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Subtle circular botanical backdrop -->
+  <circle cx="32" cy="32" r="30" fill="#FAF8F5" stroke="#E3D5DC" stroke-width="1.5"/>
+  <path d="M22 22 C14 14, 6 24, 14 32 C20 38, 28 28, 22 22 Z" fill="#FAF0F3" opacity="0.6"/>
+  <path d="M42 22 C50 14, 58 24, 50 32 C44 38, 36 28, 42 22 Z" fill="#F5F2F7" opacity="0.6"/>
+  
+  <!-- Monogram M&E -->
+  <text x="32" y="39" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="600" fill="#26212B">M<tspan font-size="20" font-style="italic" fill="#8A3358">&amp;</tspan>E</text>
+  <circle cx="32" cy="46" r="2" fill="#8A3358"/>
+</svg>

@@ -1,0 +1,1532 @@
+/* ==========================================================================
+   M&E ESTÉTICA Y SALUD - DESIGN SYSTEM TOKENS & STYLES v1.0.0
+   Generado por: Agente Programador (WAFLERS)
+   Normativa: WCAG 2.1 AA | Grid: 8px | Tema: Light Mode Exclusivo
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. COLOR SYSTEM (Superficies & Lienzos)
+     ------------------------------------------------------------------------ */
+  --color-canvas: #FFFFFF;
+  --color-surface-card: #FAF8F5;
+  --color-surface-rose: #FAF0F3;
+  --color-surface-lilac: #F5F2F7;
+  --color-surface-glass: rgba(255, 255, 255, 0.94);
+  --color-surface-caption: rgba(255, 255, 255, 0.92);
+  
+  /* ------------------------------------------------------------------------
+     2. COLOR SYSTEM (Bordes & Divisores)
+     ------------------------------------------------------------------------ */
+  --color-border-subtle: #EDE7E3;
+  --color-border-accent: #E3D5DC;
+
+  /* ------------------------------------------------------------------------
+     3. COLOR SYSTEM (Tipografía con Contraste Garantizado)
+     ------------------------------------------------------------------------ */
+  --color-text-primary: #26212B; /* Ratio 15.7:1 sobre blanco (AAA) */
+  --color-text-body: #463F4D;    /* Ratio 10.2:1 sobre blanco (AAA) */
+  --color-text-muted: #696070;   /* Ratio 6.1:1 sobre blanco (AA) */
+  --color-text-inverse: #FFFFFF; /* Para botones oscuros y badges */
+
+  /* ------------------------------------------------------------------------
+     4. COLOR SYSTEM (Acentos de Marca & CRO)
+     ------------------------------------------------------------------------ */
+  --color-accent-rose: #8A3358;       /* Ratio 7.9:1 sobre blanco (AAA) */
+  --color-accent-rose-hover: #712746;
+  --color-accent-plum: #5E3A74;       /* Ratio 9.1:1 sobre blanco (AAA) */
+  --color-focus-ring: rgba(138, 51, 88, 0.45);
+
+  /* ------------------------------------------------------------------------
+     5. COLOR SYSTEM (Conversión WhatsApp Oficial)
+     ------------------------------------------------------------------------ */
+  --color-wa-btn: #0D5C3A;            /* Ratio 8.5:1 con texto blanco */
+  --color-wa-btn-hover: #083F27;
+  --color-wa-fab: #25D366;            /* Verde WhatsApp para FAB */
+  --color-wa-fab-text: #0B2818;       /* Ratio 8.1:1 sobre #25D366 */
+
+  /* ------------------------------------------------------------------------
+     6. TIPOGRAFÍA (Familias)
+     ------------------------------------------------------------------------ */
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* ------------------------------------------------------------------------
+     7. TIPOGRAFÍA (Escala de Tamaños Fluidos)
+     ------------------------------------------------------------------------ */
+  --text-display: clamp(2.00rem, 4vw + 1rem, 3.00rem);   /* 32px a 48px */
+  --text-h2: clamp(1.625rem, 2.5vw + 1rem, 2.25rem);      /* 26px a 36px */
+  --text-h3: clamp(1.25rem, 1.5vw + 1rem, 1.50rem);        /* 20px a 24px */
+  --text-h4: clamp(1.125rem, 1vw + 1rem, 1.25rem);         /* 18px a 20px */
+  --text-lead: clamp(1.0625rem, 0.5vw + 1rem, 1.125rem);   /* 17px a 18px */
+  --text-body: 1rem;                                       /* 16px base */
+  --text-sm: 0.875rem;                                     /* 14px */
+  --text-xs: 0.75rem;                                      /* 12px */
+
+  /* ------------------------------------------------------------------------
+     8. TIPOGRAFÍA (Line Heights)
+     ------------------------------------------------------------------------ */
+  --leading-tight: 1.15;
+  --leading-snug: 1.25;
+  --leading-normal: 1.40;
+  --leading-relaxed: 1.60;
+
+  /* ------------------------------------------------------------------------
+     9. ESPACIADO (Grid de 8px)
+     ------------------------------------------------------------------------ */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.50rem;   /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1.00rem;   /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.50rem;   /* 24px */
+  --space-8: 2.00rem;   /* 32px */
+  --space-10: 2.50rem;  /* 40px */
+  --space-12: 3.00rem;  /* 48px - Target Táctil Mínimo */
+  --space-16: 4.00rem;  /* 64px */
+  --space-20: 5.00rem;  /* 80px */
+  --space-24: 6.00rem;  /* 96px */
+
+  /* ------------------------------------------------------------------------
+     10. RADIOS DE BORDE (Border Radius)
+     ------------------------------------------------------------------------ */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* ------------------------------------------------------------------------
+     11. SOMBRAS BOTÁNICAS & ELEVACIÓN
+     ------------------------------------------------------------------------ */
+  --shadow-sm: 0 2px 8px rgba(38, 33, 43, 0.04);
+  --shadow-md: 0 8px 24px rgba(38, 33, 43, 0.08);
+  --shadow-lg: 0 16px 36px rgba(38, 33, 43, 0.12);
+  --shadow-glow-wa: 0 6px 20px rgba(37, 211, 102, 0.35);
+  --shadow-glow-wa-hover: 0 8px 24px rgba(37, 211, 102, 0.50);
+  --wa-glow-pulse-start: rgba(37, 211, 102, 0.40);
+  --wa-glow-pulse-end: rgba(37, 211, 102, 0);
+
+  /* ------------------------------------------------------------------------
+     12. TRANSICIONES & TIMING
+     ------------------------------------------------------------------------ */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* ------------------------------------------------------------------------
+     13. LAYOUT
+     ------------------------------------------------------------------------ */
+  --container-max: 1160px;
+}
+
+/* ==========================================================================
+   RESET & REGLAS BASE
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  background-color: var(--color-canvas);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-body);
+  background-color: var(--color-canvas);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Accesibilidad Focus Visible Global */
+:focus-visible {
+  outline: 2px solid var(--color-accent-rose);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   TIPOGRAFÍA & ESTILOS EDITORIALES
+   ========================================================================== */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-display);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: var(--text-h4);
+  line-height: var(--leading-normal);
+}
+
+p {
+  color: var(--color-text-body);
+  line-height: var(--leading-relaxed);
+}
+
+.text-lead {
+  font-size: var(--text-lead);
+  line-height: var(--leading-normal);
+  color: var(--color-text-body);
+}
+
+.text-muted {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-rose);
+  margin-bottom: var(--space-2);
+}
+
+.eyebrow-plum {
+  color: var(--color-accent-plum);
+}
+
+/* ==========================================================================
+   LAYOUT & CONTENEDORES (MOBILE-FIRST)
+   ========================================================================== */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: var(--space-8);
+  }
+}
+
+.section {
+  padding-block: var(--space-16);
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-block: var(--space-20);
+  }
+}
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-3);
+}
+
+.section-header p {
+  color: var(--color-text-body);
+  font-size: var(--text-lead);
+}
+
+/* ==========================================================================
+   COMPONENTES: BOTONES & INTERACTIVOS (TOUCH TARGET >= 48px)
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--space-12);
+  padding-inline: var(--space-6);
+  padding-block: var(--space-3);
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-align: center;
+  transition: transform var(--duration-normal) var(--ease-spring),
+              background-color var(--duration-normal) var(--ease-spring),
+              box-shadow var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-spring);
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Botón Primario de Conversión WhatsApp */
+.btn-wa {
+  background-color: var(--color-wa-btn);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-wa:hover {
+  background-color: var(--color-wa-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--color-text-inverse);
+}
+
+.btn-wa svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Botón Acento Secundario (Rosa Profundo) */
+.btn-rose {
+  background-color: var(--color-accent-rose);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-rose:hover {
+  background-color: var(--color-accent-rose-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--color-text-inverse);
+}
+
+/* Botón Fantasma / Outlined */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-accent);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-surface-rose);
+  border-color: var(--color-accent-rose);
+  color: var(--color-accent-rose);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Botón Compacto para Header */
+.btn-compact {
+  min-height: 40px;
+  padding-inline: var(--space-4);
+  font-size: var(--text-xs);
+}
+
+@media (min-width: 640px) {
+  .btn-compact {
+    min-height: var(--space-12);
+    padding-inline: var(--space-5);
+    font-size: var(--text-sm);
+  }
+}
+
+/* Badges & Chips */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-rose {
+  background-color: var(--color-surface-rose);
+  color: var(--color-accent-rose);
+  border: 1px solid var(--color-border-accent);
+}
+
+.badge-plum {
+  background-color: var(--color-surface-lilac);
+  color: var(--color-accent-plum);
+  border: 1px solid var(--color-border-accent);
+}
+
+/* ==========================================================================
+   SECCIÓN 0: HEADER / NAVBAR STICKY (#header)
+   ========================================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-surface-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-subtle);
+  z-index: 100;
+  transition: box-shadow var(--duration-normal) var(--ease-spring);
+}
+
+.header.is-scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    height: 80px;
+  }
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  height: 44px;
+  width: auto;
+}
+
+.brand-location-tag {
+  display: none;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--color-border-subtle);
+}
+
+@media (min-width: 768px) {
+  .brand-location-tag {
+    display: block;
+  }
+}
+
+/* Navegación Desktop */
+.nav-menu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .nav-link {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-body);
+    transition: color var(--duration-fast) ease;
+    padding-block: var(--space-2);
+    position: relative;
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent-rose);
+  }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Toggler Menú Mobile */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--space-12);
+  height: var(--space-12);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-canvas);
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cajón Mobile Menu */
+.mobile-drawer {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-6) var(--space-4);
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.mobile-drawer.is-open {
+  display: flex;
+}
+
+.mobile-nav-link {
+  font-size: var(--text-lead);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-accent-rose);
+}
+
+/* ==========================================================================
+   SECCIÓN 1: HERO SECTION (#hero)
+   ========================================================================== */
+.hero-section {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-16);
+  background: linear-gradient(180deg, var(--color-surface-card) 0%, var(--color-canvas) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-20);
+  }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-10);
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero-badge-wrap {
+  margin-bottom: var(--space-1);
+}
+
+.hero-title {
+  color: var(--color-text-primary);
+}
+
+.hero-description {
+  font-size: var(--text-lead);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-body);
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .hero-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hero-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-surface-card);
+}
+
+.hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform var(--duration-normal) ease;
+}
+
+@media (min-width: 640px) {
+  .hero-img {
+    height: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-img {
+    height: 480px;
+  }
+}
+
+.hero-image-caption {
+  position: absolute;
+  bottom: var(--space-3);
+  left: var(--space-3);
+  right: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-surface-caption);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.hero-image-caption svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent-rose);
+  flex-shrink: 0;
+}
+
+/* Badges de Autoridad & Confianza del Hero */
+.hero-trust-bar {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-subtle);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .hero-trust-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-trust-bar {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: var(--space-12);
+  }
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  font-weight: 500;
+}
+
+.trust-check-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-wa-btn);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   SECCIÓN 2: PILARES DE CONFIANZA Y DIFERENCIALES (#diferenciales)
+   ========================================================================== */
+.diferenciales-section {
+  background-color: var(--color-canvas);
+}
+
+.diferenciales-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .diferenciales-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .diferenciales-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-diferencial {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-normal) var(--ease-spring),
+              box-shadow var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-spring);
+}
+
+.card-diferencial:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-accent);
+}
+
+.diferencial-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-rose);
+  margin-bottom: var(--space-2);
+}
+
+.diferencial-icon-wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+.card-diferencial h3 {
+  font-size: var(--text-h4);
+  color: var(--color-text-primary);
+}
+
+.card-diferencial p {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+/* ==========================================================================
+   SECCIÓN 3: HERO OFFER — DEPILACIÓN LÁSER TITANIUM (#laser)
+   ========================================================================== */
+.laser-section {
+  background-color: var(--color-surface-rose);
+  border-top: 1px solid var(--color-border-accent);
+  border-bottom: 1px solid var(--color-border-accent);
+}
+
+.laser-card-master {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 1024px) {
+  .laser-card-master {
+    padding: var(--space-10);
+  }
+}
+
+.laser-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .laser-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.laser-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.laser-content h2 {
+  color: var(--color-text-primary);
+}
+
+.laser-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.benefit-bullet-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-rose);
+  color: var(--color-accent-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.benefit-bullet-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.benefit-text strong {
+  display: block;
+  font-size: var(--text-body);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.benefit-text p {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+.laser-sun-notice {
+  background-color: var(--color-surface-card);
+  border-left: 3px solid var(--color-accent-rose);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+.laser-cta-group {
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.laser-cta-note {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.laser-media-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-surface-card);
+}
+
+.laser-media-wrapper img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .laser-media-wrapper img {
+    height: 420px;
+  }
+}
+
+/* ==========================================================================
+   SECCIÓN 4: CATÁLOGO DE TRATAMIENTOS INTEGRALES (#tratamientos)
+   ========================================================================== */
+.tratamientos-section {
+  background-color: var(--color-canvas);
+}
+
+.tratamientos-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.service-block-card {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: border-color var(--duration-normal) var(--ease-spring),
+              box-shadow var(--duration-normal) var(--ease-spring);
+}
+
+.service-block-card:hover {
+  border-color: var(--color-border-accent);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 1024px) {
+  .service-block-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-block-card.is-reversed {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-block-card.is-reversed .service-block-media {
+    order: 2;
+  }
+
+  .service-block-card.is-reversed .service-block-info {
+    order: 1;
+  }
+}
+
+.service-block-media {
+  position: relative;
+  background-color: var(--color-surface-lilac);
+  min-height: 260px;
+}
+
+.service-block-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.service-block-info {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .service-block-info {
+    padding: var(--space-8);
+  }
+}
+
+.service-block-header h3 {
+  color: var(--color-text-primary);
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.service-block-header p {
+  font-size: var(--text-lead);
+  color: var(--color-text-body);
+}
+
+.service-items-sublist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.subservice-item {
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.subservice-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.subservice-item strong {
+  display: block;
+  font-size: var(--text-body);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.subservice-item p {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+.service-block-footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.service-microcopy {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   SECCIÓN 5: EL CONSULTORIO (ATMÓSFERA Y EQUIPAMIENTO) (#consultorio)
+   ========================================================================== */
+.consultorio-section {
+  background-color: var(--color-surface-card);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.consultorio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .consultorio-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-10);
+  }
+}
+
+.consultorio-media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.consultorio-media img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .consultorio-media img {
+    height: 460px;
+  }
+}
+
+.consultorio-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.consultorio-details h2 {
+  color: var(--color-text-primary);
+}
+
+.consultorio-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.clinic-feature-card {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
+}
+
+.clinic-feature-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-plum);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.clinic-feature-text strong {
+  display: block;
+  font-size: var(--text-body);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.clinic-feature-text p {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+}
+
+/* Slot Estructural de Reserva: Casos Reales */
+.slot-casos-reales {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-lilac);
+  border: 1px dashed var(--color-border-accent);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.slot-casos-reales svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-rose);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECCIÓN 6: PREGUNTAS FRECUENTES (FAQ INTERACTIVO) (#faq)
+   ========================================================================== */
+.faq-section {
+  background-color: var(--color-canvas);
+}
+
+.faq-accordion-list {
+  max-width: 820px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.faq-item {
+  background-color: var(--color-surface-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--duration-fast) ease,
+              box-shadow var(--duration-fast) ease;
+}
+
+.faq-item[open] {
+  border-color: var(--color-border-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  min-height: var(--space-12);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color var(--duration-fast) ease;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary:hover {
+  color: var(--color-accent-rose);
+}
+
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-rose);
+  transition: transform var(--duration-normal) var(--ease-spring);
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 var(--space-5) var(--space-5) var(--space-5);
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  line-height: var(--leading-relaxed);
+  border-top: 1px solid transparent;
+}
+
+.faq-item[open] .faq-answer {
+  border-top-color: var(--color-border-subtle);
+  padding-top: var(--space-3);
+}
+
+/* ==========================================================================
+   SECCIÓN 7: UBICACIÓN Y CONTACTO DIRECTO (#contacto)
+   ========================================================================== */
+.contacto-section {
+  background: linear-gradient(180deg, var(--color-canvas) 0%, var(--color-surface-card) 100%);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .contacto-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.contacto-card-info {
+  background-color: var(--color-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .contacto-card-info {
+    padding: var(--space-8);
+  }
+}
+
+.contacto-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.contacto-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.contacto-item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-rose);
+  color: var(--color-accent-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contacto-item-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contacto-item-text span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.contacto-item-text p, .contacto-item-text a {
+  font-size: var(--text-body);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.contacto-item-text a:hover {
+  color: var(--color-accent-rose);
+}
+
+.contacto-action-box {
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contacto-map-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-surface-card);
+  height: 380px;
+}
+
+@media (min-width: 1024px) {
+  .contacto-map-frame {
+    height: 100%;
+    min-height: 420px;
+  }
+}
+
+.contacto-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   SECCIÓN 8: FOOTER INSTITUCIONAL (#footer)
+   ========================================================================== */
+.footer {
+  background-color: var(--color-surface-card);
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-10);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-brand-col p {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  max-width: 380px;
+}
+
+.footer-links-col h4 {
+  font-size: var(--text-h4);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-links-list a {
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  transition: color var(--duration-fast) ease;
+}
+
+.footer-links-list a:hover {
+  color: var(--color-accent-rose);
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-body);
+  transition: color var(--duration-fast) ease;
+}
+
+.footer-social-link:hover {
+  color: var(--color-accent-rose);
+}
+
+.footer-social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-disclaimer {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border-subtle);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+  text-align: center;
+}
+
+.footer-copyright {
+  margin-top: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* ==========================================================================
+   COMPONENTE FLOTANTE: WHATSAPP FAB PERSISTENTE
+   ========================================================================== */
+.wa-fab-container {
+  position: fixed;
+  bottom: var(--space-5);
+  right: var(--space-5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .wa-fab-container {
+    bottom: var(--space-6);
+    right: var(--space-6);
+  }
+}
+
+.wa-fab-tooltip {
+  display: none;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity var(--duration-normal) ease,
+              transform var(--duration-normal) var(--ease-spring);
+}
+
+@media (min-width: 1024px) {
+  .wa-fab-container:hover .wa-fab-tooltip {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.wa-fab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-wa-fab);
+  color: var(--color-wa-fab-text);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-wa);
+  transition: transform var(--duration-normal) var(--ease-spring),
+              box-shadow var(--duration-normal) var(--ease-spring);
+  animation: wa-pulse 3s infinite ease-in-out;
+}
+
+.wa-fab-button:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-wa-hover);
+  animation: none;
+}
+
+.wa-fab-button:active {
+  transform: scale(0.96);
+}
+
+.wa-fab-button svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-wa-fab-text);
+}
+
+@keyframes wa-pulse {
+  0% {
+    box-shadow: var(--shadow-lg), 0 0 0 0 var(--wa-glow-pulse-start);
+  }
+  70% {
+    box-shadow: var(--shadow-lg), 0 0 0 14px var(--wa-glow-pulse-end);
+  }
+  100% {
+    box-shadow: var(--shadow-lg), 0 0 0 0 var(--wa-glow-pulse-end);
+  }
+}

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Meta Tags Primarios -->
+  <title>M&E Estética y Salud | Consultorio Privado en Chacras de Coria</title>
+  <meta name="title" content="M&E Estética y Salud | Consultorio Privado en Chacras de Coria" />
+  <meta name="description" content="Consultorio exclusivo de estética y bienestar en Chacras de Coria, Mendoza. Depilación definitiva Láser Titanium con equipo propio, tratamientos faciales y corporales, y masajes. Atención personalizada unisex." />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FAF8F5" />
+  <link rel="canonical" href="https://mye-estetica.com.ar/" />
+
+  <!-- Open Graph / Previsualización en WhatsApp e Instagram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mye-estetica.com.ar/" />
+  <meta property="og:title" content="M&E Estética y Salud | Chacras de Coria, Mendoza" />
+  <meta property="og:description" content="Estética del alma, rigor técnico y privacidad total. Depilación Láser Titanium, tratamientos faciales Laca, remodelación corporal y masajes en Chacras de Coria. Turnos exclusivos unisex." />
+  <meta property="og:image" content="https://mye-estetica.com.ar/assets/brand/og-image.jpg" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="M&E Estética y Salud" />
+
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/brand/logo-compact.svg" />
+  <link rel="alternate icon" href="assets/brand/favicon.ico" />
+
+  <!-- Preconexión a Tipografías Oficiales Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema Markup LocalBusiness (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://mye-estetica.com.ar/#business",
+    "name": "M&E Estética y Salud",
+    "image": "https://mye-estetica.com.ar/assets/brand/logo.svg",
+    "description": "Consultorio privado de estética integral, aparatología avanzada y bienestar holístico en Chacras de Coria, Mendoza. Atendido exclusivamente por su fundadora con 20 años de trayectoria.",
+    "url": "https://mye-estetica.com.ar",
+    "telephone": "+5492616817621",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. San Martín 5355",
+      "addressLocality": "Chacras de Coria",
+      "addressRegion": "Mendoza",
+      "postalCode": "5505",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -32.9981,
+      "longitude": -68.8789
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.instagram.com/mye_esteticasalud"
+    ]
+  }
+  </script>
+
+  <!-- Hoja de Estilos Maestra -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       SECCIÓN 0: HEADER / NAVBAR STICKY (#header)
+       ====================================================================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-link" aria-label="M&E Estética y Salud - Inicio">
+        <img src="assets/brand/logo.svg" alt="M&E Estética y Salud" class="brand-logo-img" width="180" height="45" />
+        <span class="brand-location-tag">Chacras de Coria</span>
+      </a>
+
+      <!-- Menú de Navegación Desktop -->
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <a href="#diferenciales" class="nav-link">Diferenciales</a>
+        <a href="#laser" class="nav-link">Láser Titanium</a>
+        <a href="#tratamientos" class="nav-link">Tratamientos</a>
+        <a href="#consultorio" class="nav-link">El Espacio</a>
+        <a href="#faq" class="nav-link">Preguntas</a>
+        <a href="#contacto" class="nav-link">Ubicación</a>
+      </nav>
+
+      <!-- Botón CTA Header & Hamburguesa Mobile -->
+      <div class="header-actions">
+        <a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20consultar%20disponibilidad%20de%20turnos%20en%20el%20consultorio%20de%20Chacras%20de%20Coria." 
+           class="btn btn-wa btn-compact" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Agendar turno en consultorio por WhatsApp">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.889 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+          </svg>
+          <span>Agendar Turno</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cajón Desplegable Mobile -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#diferenciales" class="mobile-nav-link">Diferenciales</a>
+      <a href="#laser" class="mobile-nav-link">Láser Titanium</a>
+      <a href="#tratamientos" class="mobile-nav-link">Tratamientos</a>
+      <a href="#consultorio" class="mobile-nav-link">El Espacio</a>
+      <a href="#faq" class="mobile-nav-link">Preguntas</a>
+      <a href="#contacto" class="mobile-nav-link">Ubicación</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         SECCIÓN 1: HERO SECTION (#hero)
+         ====================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="eyebrow">CHACRAS DE CORIA · CONSULTORIO PRIVADO EXCLUSIVO</span>
+            </div>
+            <h1 class="hero-title">Estética avanzada y bienestar integral en Chacras de Coria: el cuidado que tu cuerpo merece.</h1>
+            <p class="hero-description">Un espacio íntimo donde la tecnología de vanguardia y la armonía personal se encuentran. Atendido exclusivamente por su fundadora con 20 años de experiencia, 100% con turno previo programado, sin esperas compartidas y con atención unisex personalizada.</p>
+            
+            <div class="hero-actions">
+              <a href="https://wa.me/5492616817621?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20inicial%20y%20conocer%20qu%C3%A9%20tratamiento%20se%20adapta%20mejor%20a%20mis%20necesidades." 
+                 class="btn btn-wa" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="Agendar valoración inicial por WhatsApp">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.889 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+                </svg>
+                <span>Agendar Valoración Inicial</span>
+              </a>
+              <a href="#tratamientos" class="btn btn-ghost">
+                <span>Explorar Tratamientos</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img src="assets/hero/hero-wellness-bg.webp" 
+                 alt="Consultorio privado M&E Estética y Salud en Chacras de Coria, Mendoza" 
+                 class="hero-img" 
+                 width="1200" 
+                 height="675" 
+                 fetchpriority="high" />
+            <div class="hero-image-caption">
+              <img src="assets/icons/lotus.svg" alt="" width="16" height="16" aria-hidden="true" />
+              <span>Consultorio privado M&E en Chacras de Coria · Atención exclusiva sin esperas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges de Autoridad & Confianza -->
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <img src="assets/icons/check-shield.svg" alt="" class="trust-check-icon" width="18" height="18" aria-hidden="true" />
+            <span>20 años de trayectoria técnica y capacitación continua</span>
+          </div>
+          <div class="trust-item">
+            <img src="assets/icons/check-shield.svg" alt="" class="trust-check-icon" width="18" height="18" aria-hidden="true" />
+            <span>Atención personalizada 1 a 1 sin cruzarse con nadie</span>
+          </div>
+          <div class="trust-item">
+            <img src="assets/icons/check-shield.svg" alt="" class="trust-check-icon" width="18" height="18" aria-hidden="true" />
+            <span>Aparatología propia permanente en consultorio</span>
+          </div>
+          <div class="trust-item">
+            <img src="assets/icons/check-shield.svg" alt="" class="trust-check-icon" width="18" height="18" aria-hidden="true" />
+            <span>Protocolos y tratamientos 100% unisex</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 2: PILARES DE CONFIANZA Y DIFERENCIALES (#diferenciales)
+         ====================================================================== -->
+    <section class="section diferenciales-section" id="diferenciales">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">EL VALOR DE LO EXCLUSIVO</span>
+          <h2>Por qué elegir un consultorio privado frente a un centro masivo</h2>
+          <p>Tu tiempo, tu intimidad y tu tranquilidad son la prioridad. Diseñamos un modelo de atención donde nunca sos un número más ni esperás en una sala concurrida.</p>
+        </header>
+
+        <div class="diferenciales-grid">
+          <!-- Diferencial 1 -->
+          <article class="card-diferencial">
+            <div class="diferencial-icon-wrap">
+              <img src="assets/icons/check-shield.svg" alt="" width="24" height="24" aria-hidden="true" />
+            </div>
+            <h3>Atención Exclusiva 1 a 1</h3>
+            <p>El consultorio se reserva para una sola persona a la vez. No compartís sala de espera con desconocidos ni sufrís demoras innecesarias. Ingresás a tu hora convenida en un clima de silencio y confort.</p>
+          </article>
+
+          <!-- Diferencial 2 -->
+          <article class="card-diferencial">
+            <div class="diferencial-icon-wrap">
+              <img src="assets/icons/spark.svg" alt="" width="24" height="24" aria-hidden="true" />
+            </div>
+            <h3>Sin Depender de Alquileres de Máquinas</h3>
+            <p>Nuestra aparatología —incluyendo el Láser Titanium y los sistemas de radiofrecuencia— reside de manera fija en el consultorio. Coordinamos tus sesiones cualquier día de la semana sin atarte a fechas itinerantes mensuales.</p>
+          </article>
+
+          <!-- Diferencial 3 -->
+          <article class="card-diferencial">
+            <div class="diferencial-icon-wrap">
+              <img src="assets/icons/calendar-clock.svg" alt="" width="24" height="24" aria-hidden="true" />
+            </div>
+            <h3>Atendido por su Dueña Especializada</h3>
+            <p>Dos décadas de experiencia en cosmetología, drenaje y aparatología aplicada. Cada sesión es evaluada y ejecutada por la misma profesional, garantizando un seguimiento riguroso y personalizado de tu evolución.</p>
+          </article>
+
+          <!-- Diferencial 4 -->
+          <article class="card-diferencial">
+            <div class="diferencial-icon-wrap">
+              <img src="assets/icons/lotus.svg" alt="" width="24" height="24" aria-hidden="true" />
+            </div>
+            <h3>Distribuidora Oficial de Cosmética de Punta</h3>
+            <p>Utilizamos y representamos oficialmente cremas, principios activos y sueros de Laboratorio Laca. Pureza dérmica certificada para potenciar cada resultado clínico y continuar tu cuidado en casa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 3: HERO OFFER — DEPILACIÓN LÁSER TITANIUM (#laser)
+         ====================================================================== -->
+    <section class="section laser-section" id="laser">
+      <div class="container">
+        <div class="laser-card-master">
+          <div class="laser-grid">
+            <div class="laser-content">
+              <div>
+                <span class="badge badge-rose">SERVICIO ESTRELLA · TECNOLOGÍA PROPIA</span>
+              </div>
+              <h2>Depilación definitiva Láser Titanium en Chacras de Coria: sesiones rápidas, indoloras y para todo el año</h2>
+              <p>Olvidate de las fechas restrictivas y del dolor innecesario. Incorporamos la tecnología más eficiente del mercado en nuestro propio gabinete para ofrecerte una experiencia cómoda, segura y con resultados visibles desde las primeras sesiones.</p>
+              
+              <div class="laser-benefits-list">
+                <div class="benefit-item">
+                  <div class="benefit-bullet-icon">
+                    <img src="assets/icons/spark.svg" alt="" width="14" height="14" aria-hidden="true" />
+                  </div>
+                  <div class="benefit-text">
+                    <strong>Cabezal con Enfriamiento Continuo</strong>
+                    <p>Sistema de frío por contacto que minimiza la sensación térmica en la piel, permitiendo un tratamiento sumamente confortable e indoloro.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <div class="benefit-bullet-icon">
+                    <img src="assets/icons/calendar-clock.svg" alt="" width="14" height="14" aria-hidden="true" />
+                  </div>
+                  <div class="benefit-text">
+                    <strong>Disponibilidad Total por Equipo Propio</strong>
+                    <p>Al no depender de alquileres de aparatología, reservás tu sesión de lunes a sábado según tu conveniencia horaria, asegurando la continuidad del ciclo biológico del vello.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <div class="benefit-bullet-icon">
+                    <img src="assets/icons/check-shield.svg" alt="" width="14" height="14" aria-hidden="true" />
+                  </div>
+                  <div class="benefit-text">
+                    <strong>Protocolo 100% Unisex</strong>
+                    <p>Atención natural y profesional para hombres y mujeres. Tratamiento integral en zonas faciales, corporales completas, espalda, pecho, barba o piernas, adaptando la potencia a cada tipo de folículo.</p>
+                  </div>
+                </div>
+
+                <div class="benefit-item">
+                  <div class="benefit-bullet-icon">
+                    <img src="assets/icons/lotus.svg" alt="" width="14" height="14" aria-hidden="true" />
+                  </div>
+                  <div class="benefit-text">
+                    <strong>Apto para Todos los Fototipos de Piel</strong>
+                    <p>Tecnología trío que actúa eficazmente en pieles claras y bronceadas, permitiendo sostener el tratamiento de manera segura durante las cuatro estaciones.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="laser-sun-notice">
+                <p>Te brindamos una pauta clara de cuidados previos y posteriores a la exposición solar para cuidar la salud de tu piel y evitar cualquier tipo de mancha o irritación.</p>
+              </div>
+
+              <div class="laser-cta-group">
+                <a href="https://wa.me/5492616817621?text=Hola%2C%20me%20interesa%20realizarme%20depilaci%C3%B3n%20definitiva%20L%C3%A1ser%20Titanium.%20Quisiera%20consultar%20zonas%2C%20precios%20y%20disponibilidad%20de%20d%C3%ADas." 
+                   class="btn btn-wa" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Consultar turno de depilación láser titanium por WhatsApp">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.889 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+                  </svg>
+                  <span>Consultar Turno de Láser Titanium</span>
+                </a>
+                <span class="laser-cta-note">Reserva directa por WhatsApp · Asesoramiento personalizado de zonas y frecuencia.</span>
+              </div>
+            </div>
+
+            <div class="laser-media-wrapper">
+              <img src="assets/services/laser-titanium.webp" 
+                   alt="Sesión de depilación definitiva Láser Titanium en M&E Estética y Salud Chacras de Coria" 
+                   width="800" 
+                   height="600" 
+                   loading="lazy" 
+                   decoding="async" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 4: CATÁLOGO DE TRATAMIENTOS INTEGRALES (#tratamientos)
+         ====================================================================== -->
+    <section class="section tratamientos-section" id="tratamientos">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">CUIDADO INTEGRAL DE CABEZA A PIES</span>
+          <h2>Tratamientos faciales, corporales y bienestar: ciencia dérmica y relajación holística</h2>
+          <p>Cada cuerpo y cada rostro tienen necesidades singulares. Combinamos aparatología de precisión con maniobras manuales y activos biológicos de primer nivel para restaurar la frescura, tonificar y disolver el estrés diario.</p>
+        </header>
+
+        <div class="tratamientos-blocks">
+          <!-- Bloque 4.1: Estética Facial -->
+          <article class="service-block-card">
+            <div class="service-block-media">
+              <img src="assets/services/facial-laca.webp" 
+                   alt="Tratamientos faciales y dermocosmética oficial Laboratorio Laca en Chacras de Coria" 
+                   width="800" 
+                   height="600" 
+                   loading="lazy" 
+                   decoding="async" />
+            </div>
+            <div class="service-block-info">
+              <div class="service-block-header">
+                <span class="badge badge-plum">ESTÉTICA FACIAL &amp; DERMOCOSMÉTICA</span>
+                <h3>Cuidado Facial &amp; Renovación Cutánea</h3>
+                <p>Protocolos diseñados para desintoxicar los poros, estimular la síntesis natural de colágeno y devolver luminosidad al rostro.</p>
+              </div>
+
+              <div class="service-items-sublist">
+                <div class="subservice-item">
+                  <strong>1. Limpieza Profunda &amp; Peeling Cosmetológico</strong>
+                  <p>Higiene celular exhaustiva, exfoliación controlada y extracción delicada para eliminar impurezas, equilibrar el sebo y afinar los poros.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>2. Radiofrecuencia Facial &amp; Espátula Ultrasónica</strong>
+                  <p>Onda térmica que tensa la piel, atenúa líneas de expresión y redefine el óvalo facial, complementada con vibración ultrasónica profunda.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>3. Línea Dermocosmética Anti-Age Laboratorio Laca</strong>
+                  <p>Nutrición intensiva con activos concentrados (ácido hialurónico, antioxidantes y péptidos tensores) avalados por formulación de laboratorio.</p>
+                </div>
+              </div>
+
+              <div class="service-block-footer">
+                <p class="service-microcopy">Tratamientos adaptados para todo tipo de piel, ideales para descongestionar el rostro tras semanas de trabajo o exposición ambiental.</p>
+                <a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20asesoramiento%20sobre%20los%20tratamientos%20faciales%20y%20dermocosm%C3%A9tica%20de%20Laboratorio%20Laca." 
+                   class="btn btn-rose" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Consultar tratamientos faciales por WhatsApp">
+                  <span>Consultar Tratamientos Faciales</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bloque 4.2: Estética Corporal -->
+          <article class="service-block-card is-reversed">
+            <div class="service-block-media">
+              <img src="assets/services/corporal-reductores.webp" 
+                   alt="Tratamientos corporales reductores y presoterapia en Chacras de Coria Mendoza" 
+                   width="800" 
+                   height="600" 
+                   loading="lazy" 
+                   decoding="async" />
+            </div>
+            <div class="service-block-info">
+              <div class="service-block-header">
+                <span class="badge badge-rose">ESTÉTICA CORPORAL &amp; APARATOLOGÍA AVANZADA</span>
+                <h3>Remodelación Corporal, Reducción &amp; Firmeza</h3>
+                <p>Soluciones no invasivas orientadas a movilizar adiposidad localizada, reducir celulitis y devolver firmeza al tejido muscular y dérmico.</p>
+              </div>
+
+              <div class="service-items-sublist">
+                <div class="subservice-item">
+                  <strong>1. Ultracavitación &amp; Radiofrecuencia Corporal</strong>
+                  <p>Ultrasonido focalizado que disuelve depósitos grasos resistentes, combinado con estimulación térmica que combate la flacidez y alisa la textura cutánea.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>2. Presoterapia Secuencial de Botas y Abdomen</strong>
+                  <p>Masaje neumático continuo que activa la circulación de retorno, descongestiona piernas cansadas y optimiza el drenaje linfático integral.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>3. Electroestimulación Muscular (Ondas Rusas / Cuadradas)</strong>
+                  <p>Tonificación de grupos musculares profundos para reafirmar glúteos, abdomen o piernas y definir el contorno corporal.</p>
+                </div>
+              </div>
+
+              <div class="service-block-footer">
+                <p class="service-microcopy">Sesiones progresivas con aparatología en regla y supervisión personalizada.</p>
+                <a href="https://wa.me/5492616817621?text=Hola%2C%20me%20comunico%20para%20consultar%20por%20sesiones%20de%20aparatolog%C3%ADa%20corporal%20(reductores%2C%20presoterapia%20y%20tonificaci%C3%B3n)." 
+                   class="btn btn-rose" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Consultar tratamientos corporales por WhatsApp">
+                  <span>Consultar Tratamientos Corporales</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bloque 4.3: Terapias de Bienestar y Descarga Holística -->
+          <article class="service-block-card">
+            <div class="service-block-media">
+              <img src="assets/services/masajes-reiki.webp" 
+                   alt="Masajes descontracturantes, relajantes y reiki en Chacras de Coria Mendoza" 
+                   width="800" 
+                   height="600" 
+                   loading="lazy" 
+                   decoding="async" />
+            </div>
+            <div class="service-block-info">
+              <div class="service-block-header">
+                <span class="badge badge-plum">TERAPIAS DE BIENESTAR Y DESCARGA HOLÍSTICA</span>
+                <h3>Masajes Terapéuticos &amp; Equilibrio del Alma</h3>
+                <p>El momento para desconectar de la rutina en un espacio de absoluto silencio, aromaterapia suave y manos experimentadas.</p>
+              </div>
+
+              <div class="service-items-sublist">
+                <div class="subservice-item">
+                  <strong>1. Masajes Descontracturantes &amp; Sedativos</strong>
+                  <p>Alivio focalizado de tensiones en espalda, cuello, trapecios y cintura, devolviendo elasticidad a la fibra muscular y serenidad al sistema nervioso.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>2. Masajes Relajantes &amp; Reflexología Podal</strong>
+                  <p>Maniobras fluidas combinadas con estimulación en puntos reflejos de los pies para armonizar órganos internos y aliviar la fatiga física.</p>
+                </div>
+                <div class="subservice-item">
+                  <strong>3. Sesiones de Reiki Energético</strong>
+                  <p>Terapia holística para desbloquear centros energéticos, calmar la sobrecarga mental y restaurar la vitalidad interna.</p>
+                </div>
+              </div>
+
+              <div class="service-block-footer">
+                <p class="service-microcopy">Espacio ideal para deportistas, profesionales con sobrecarga postural y cualquier persona que busque descanso genuino.</p>
+                <a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20reservar%20un%20turno%20para%20una%20sesi%C3%B3n%20de%20masajes%20integrales%20%2F%20terapias%20de%20relajaci%C3%B3n." 
+                   class="btn btn-rose" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Coordinar sesión de masajes por WhatsApp">
+                  <span>Coordinar Sesión de Masajes</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 5: EL CONSULTORIO (ATMÓSFERA Y EQUIPAMIENTO) (#consultorio)
+         ====================================================================== -->
+    <section class="section consultorio-section" id="consultorio">
+      <div class="container">
+        <div class="consultorio-grid">
+          <div class="consultorio-media">
+            <img src="assets/clinic/gabinete-chacras.webp" 
+                 alt="Gabinete privado y aparatología en M&E Estética y Salud, Chacras de Coria" 
+                 width="800" 
+                 height="600" 
+                 loading="lazy" 
+                 decoding="async" />
+          </div>
+
+          <div class="consultorio-details">
+            <div>
+              <span class="eyebrow">UN REFUGIO EN CHACRAS DE CORIA</span>
+            </div>
+            <h2>La armonía de un espacio pensado exclusivamente para tu descanso</h2>
+            <p>Nuestro consultorio privado sobre Av. San Martín te recibe con camilla confortable, fundas impolutas, luz natural serena y rigurosos protocolos de asepsia. Un entorno tranquilo y silencioso donde el cuidado personal es una pausa sagrada en tu día.</p>
+            
+            <div class="consultorio-features-list">
+              <div class="clinic-feature-card">
+                <img src="assets/icons/check-shield.svg" alt="" class="clinic-feature-icon" width="24" height="24" aria-hidden="true" />
+                <div class="clinic-feature-text">
+                  <strong>Higiene y Desinfección Clínica</strong>
+                  <p>Esterilización rigurosa de aparatología e instrumental antes de cada paciente.</p>
+                </div>
+              </div>
+
+              <div class="clinic-feature-card">
+                <img src="assets/icons/calendar-clock.svg" alt="" class="clinic-feature-icon" width="24" height="24" aria-hidden="true" />
+                <div class="clinic-feature-text">
+                  <strong>Cabina Individual a Puertas Cerradas</strong>
+                  <p>Tu turno es tu espacio propio; jamás habrá interrupciones externas ni tránsito de terceros.</p>
+                </div>
+              </div>
+
+              <div class="clinic-feature-card">
+                <img src="assets/icons/spark.svg" alt="" class="clinic-feature-icon" width="24" height="24" aria-hidden="true" />
+                <div class="clinic-feature-text">
+                  <strong>Equipamiento Instalado en Sala</strong>
+                  <p>Gabinete equipado con torre de insumos, lupa de trabajo y aparatología propia lista para operar.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slot Estructural de Reserva: Casos Reales -->
+            <div class="slot-casos-reales">
+              <img src="assets/icons/spark.svg" alt="" width="20" height="20" aria-hidden="true" />
+              <span><strong>Seguimiento de Resultados:</strong> Evaluamos el progreso sesión a sesión con fotografías de control privado para que compruebes la evolución de tu piel y contorno corporal.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 6: PREGUNTAS FRECUENTES (FAQ INTERACTIVO) (#faq)
+         ====================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">TRANSPARENCIA Y CONFIANZA</span>
+          <h2>Preguntas frecuentes sobre turnos, tratamientos y protocolos</h2>
+          <p>Despejamos tus principales dudas antes de tu primera visita para que reserves tu turno con total tranquilidad.</p>
+        </header>
+
+        <div class="faq-accordion-list">
+          <!-- Pregunta 1 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>¿Los tratamientos son tanto para hombres como para mujeres?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Sí, absolutamente. En M&amp;E Estética y Salud todos nuestros tratamientos son 100% unisex. Atendemos a hombres y mujeres sin ningún tipo de distinción: desde depilación definitiva de espalda, barba o piernas, hasta limpiezas faciales profundas y masajes descontracturantes. El cuidado del cuerpo, la piel y el bienestar es un derecho y una necesidad de todos.</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 2 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>¿El tratamiento de depilación con Láser Titanium genera dolor o quemaduras?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>No. La tecnología Láser Titanium cuenta con un cabezal refrigerado de enfriamiento continuo por contacto, lo que neutraliza la sensación de calor y convierte la sesión en un procedimiento sumamente confortable e indoloro. Además, adaptamos la intensidad y los parámetros a tu sensibilidad dérmica para que disfrutes de una experiencia segura y sin molestias.</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 3 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>¿Con qué frecuencia se coordinan las sesiones y qué disponibilidad de turnos tienen?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Una de nuestras mayores ventajas es que disponemos de aparatología propia en consultorio fijo, sin depender de máquinas alquiladas por fechas aisladas. Esto significa que podemos coordinar tus sesiones en el día y horario que mejor te convenga de lunes a sábado, respetando con exactitud los intervalos biológicos ideales para que cada tratamiento sea sumamente eficaz.</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 4 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>¿Qué precauciones debo tener con la exposición al sol durante el tratamiento?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>La salud de tu piel es lo primero. En el caso de la depilación definitiva o de peelings cosmetológicos, te indicamos evitar la exposición solar directa 48 a 72 horas antes y después de cada sesión, además de mantener un uso constante de protector solar con factor adecuado. De esta manera prevenimos manchas dérmicas e irritaciones, asegurando que el tejido cicatrice y regenere de forma óptima.</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 5 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>¿Cómo se realiza la reserva de turnos y cuáles son los medios de pago disponibles?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Para garantizar que cada paciente cuente con el consultorio a su entera disposición y sin esperas, atendemos exclusivamente con turno previo acordado vía WhatsApp. Podés abonar mediante transferencia bancaria, billeteras virtuales (Mercado Pago) o efectivo al momento de tu sesión. Al confirmar tu horario, te brindamos la ubicación exacta y las indicaciones para tu llegada.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECCIÓN 7: UBICACIÓN Y CONTACTO DIRECTO (#contacto)
+         ====================================================================== -->
+    <section class="section contacto-section" id="contacto">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">COORDINÁ TU VISITA</span>
+          <h2>Te esperamos en el corazón de Chacras de Coria</h2>
+          <p>Un consultorio de fácil acceso, estacionamiento cómodo en las inmediaciones y la calidez de una atención que prioriza tu tiempo.</p>
+        </header>
+
+        <div class="contacto-grid">
+          <!-- Ficha de Datos -->
+          <div class="contacto-card-info">
+            <h3>Información del Consultorio</h3>
+            
+            <div class="contacto-info-list">
+              <div class="contacto-info-item">
+                <div class="contacto-item-icon">
+                  <img src="assets/icons/map-pin.svg" alt="" width="20" height="20" aria-hidden="true" />
+                </div>
+                <div class="contacto-item-text">
+                  <span>Dirección</span>
+                  <p>Av. San Martín 5355, Chacras de Coria, Luján de Cuyo, Mendoza</p>
+                </div>
+              </div>
+
+              <div class="contacto-info-item">
+                <div class="contacto-item-icon">
+                  <img src="assets/icons/calendar-clock.svg" alt="" width="20" height="20" aria-hidden="true" />
+                </div>
+                <div class="contacto-item-text">
+                  <span>Modalidad de Atención</span>
+                  <p>Exclusivamente con turno previo programado (sin sala de espera compartida).</p>
+                </div>
+              </div>
+
+              <div class="contacto-info-item">
+                <div class="contacto-item-icon">
+                  <img src="assets/icons/calendar-clock.svg" alt="" width="20" height="20" aria-hidden="true" />
+                </div>
+                <div class="contacto-item-text">
+                  <span>Días y Horarios</span>
+                  <p>Lunes a Sábados de 09:00 a 20:00 hs.</p>
+                </div>
+              </div>
+
+              <div class="contacto-info-item">
+                <div class="contacto-item-icon">
+                  <img src="assets/icons/phone.svg" alt="" width="20" height="20" aria-hidden="true" />
+                </div>
+                <div class="contacto-item-text">
+                  <span>WhatsApp de Reservas</span>
+                  <p><a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20coordinar%20un%20turno%20en%20M%26E%20Est%C3%A9tica%20y%20Salud." target="_blank" rel="noopener noreferrer">+54 9 261 681-7621</a></p>
+                </div>
+              </div>
+
+              <div class="contacto-info-item">
+                <div class="contacto-item-icon">
+                  <img src="assets/icons/instagram.svg" alt="" width="20" height="20" aria-hidden="true" />
+                </div>
+                <div class="contacto-item-text">
+                  <span>Instagram Oficial</span>
+                  <p><a href="https://www.instagram.com/mye_esteticasalud" target="_blank" rel="noopener noreferrer">@mye_esteticasalud</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contacto-action-box">
+              <a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20coordinar%20un%20turno%20en%20M%26E%20Est%C3%A9tica%20y%20Salud." 
+                 class="btn btn-wa" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="Escribir por WhatsApp para coordinar turno">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.889 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+                </svg>
+                <span>Escribir por WhatsApp para Coordinar Turno</span>
+              </a>
+              <span class="laser-cta-note">Respondemos a la brevedad para coordinar tu cita según tu disponibilidad horaria.</span>
+            </div>
+          </div>
+
+          <!-- Mapa de Google Maps Interactivo Geolocalizado -->
+          <div class="contacto-map-frame">
+            <iframe 
+              title="Mapa de ubicación de M&E Estética y Salud en Chacras de Coria, Mendoza"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.1648057124235!2d-68.8814748!3d-32.9981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a81179e8a93%3A0xc3cbcfd485ee4bf5!2sAv.%20San%20Mart%C3%ADn%205355%2C%20M5505%20Chacras%20de%20Coria%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       SECCIÓN 8: FOOTER INSTITUCIONAL (#footer)
+       ====================================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna de Marca -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-link" aria-label="M&E Estética y Salud">
+            <img src="assets/brand/logo.svg" alt="M&E Estética y Salud" class="brand-logo-img" width="180" height="45" />
+          </a>
+          <p>Consultorio privado de estética avanzada, dermocosmética y bienestar holístico en Chacras de Coria, Mendoza. 20 años dedicados al cuidado consciente y personalizado de tu cuerpo.</p>
+        </div>
+
+        <!-- Columna de Enlaces Rápidos -->
+        <div class="footer-links-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#diferenciales">Diferenciales</a></li>
+            <li><a href="#laser">Láser Titanium</a></li>
+            <li><a href="#tratamientos">Tratamientos Faciales &amp; Corporales</a></li>
+            <li><a href="#consultorio">El Consultorio</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna de Canales Digitales -->
+        <div class="footer-links-col">
+          <h4>Canales Directos</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="https://www.instagram.com/mye_esteticasalud" class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/instagram.svg" alt="" width="18" height="18" aria-hidden="true" />
+                <span>@mye_esteticasalud</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/5492616817621?text=Hola%2C%20quisiera%20coordinar%20un%20turno%20en%20M%26E%20Est%C3%A9tica%20y%20Salud." class="footer-social-link" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/phone.svg" alt="" width="18" height="18" aria-hidden="true" />
+                <span>+54 9 261 681-7621</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Disclaimer Legal & Salud -->
+      <div class="footer-disclaimer">
+        <p>Los tratamientos estéticos y cosmetológicos ofrecidos no reemplazan el diagnóstico ni el tratamiento médico dermatológico. Cada protocolo es evaluado de forma individual.</p>
+      </div>
+
+      <!-- Copyright & Créditos Agencia WAFLERS -->
+      <div class="footer-copyright">
+        <p>© 2026 M&amp;E Estética y Salud. Todos los derechos reservados. Desarrollado con excelencia por WAFLERS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       COMPONENTE FLOTANTE: WHATSAPP FAB PERSISTENTE
+       ====================================================================== -->
+  <div class="wa-fab-container">
+    <div class="wa-fab-tooltip" role="tooltip">
+      ¿Tenés dudas o querés agendar? Escribinos por WhatsApp.
+    </div>
+    <a href="https://wa.me/5492616817621?text=Hola%2C%20me%20comunico%20desde%20la%20web%20de%20M%26E%20Est%C3%A9tica%20y%20Salud%20para%20consultar%20por%20turnos%20disponibles." 
+       class="wa-fab-button" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Abrir conversación de WhatsApp con M&E Estética y Salud">
+      <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.889 9.885m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Script Ligero y Modular de Interacción -->
+  <script src="main.js"></script>
+</body>
+</html>
